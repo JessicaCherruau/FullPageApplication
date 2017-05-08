@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PresentationModule } from './presentation/presentation.module';
+import { SimulationModule } from './simulation/simulation.module';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/concept', pathMatch: 'full' }
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     PresentationModule,
+    SimulationModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

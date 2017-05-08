@@ -6,40 +6,42 @@
 </ul>
 
 <div id="fullpage" swipeDetect (detectSwipeUp)="handleSwipeUp()" (detectSwipeDown)="handleSwipeDown()">
-	<div class="section" #section0>
-		<h1>fullPage.js</h1>
-		<p>Create Beautiful Fullscreen Scrolling Websites</p>
-    <div class="row text-center">
-      <img (click)="goto(1)" src="assets/right-arrow-circular-button.svg" class="circular-button" alt="down arrow">
-    </div>
+	<div class="section title-page" #section0>
+        <div class="row content">
+			<div class="col-md-5 col-md-offset-4 col-sm-12 text-right center-div">
+				<h1>fullPage.js</h1>
+				<p>Create Beautiful Fullscreen Scrolling Websites</p>
+			</div>
+        </div>
+        <div class="row text-center footer">
+            <img (click)="goto(1)" src="assets/right-arrow-circular-button.svg" class="circular-button" alt="down arrow">
+        </div>
 	</div>
 	<div class="section" #section1>
-		<div class="slide">
-			<div class="intro">
+			<div class="row content">
 				<h1>Create Sliders</h1>
 				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
 			</div>
-		</div>
-    <div class="row text-center">
+    <div class="row text-center footer">
       <img (click)="goto(2)" src="assets/right-arrow-circular-button.svg" class="circular-button" alt="down arrow">
     </div>
 	</div>
 	<div class="section" #section2>
-		<div class="intro">
+		<div class="row content">
 			<h1>Example</h1>
 			<p>HTML markup example to define 4 sections.</p>
 		</div>
-    <div class="row text-center">
+    <div class="row text-center footer">
       <img (click)="goto(3)" src="assets/right-arrow-circular-button.svg" class="circular-button" alt="down arrow">
     </div>
 	</div>
 	<div class="section" #section3>
-		<div class="intro">
+		<div class="row content">
 			<h1>Working On Tablets</h1>
 			<p>
 				Designed to fit to different screen sizes as well as tablet and mobile devices.
-				<br /><br /><br /><br /><br /><br />
 			</p>
+			<button type="button" class="btn btn-primary" routerLink="/simulation">Faire une simulation</button>
 		</div>
 	</div>
 </div>

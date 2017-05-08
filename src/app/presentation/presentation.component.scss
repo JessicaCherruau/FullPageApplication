@@ -10,9 +10,38 @@
         color: red;
         overflow: hidden;
         height: 100vh;
+        position: relative;
+        display: flex;
+
+        &.title-page{
+            background: url('../../assets/dashboard.jpg') #333;
+            background-size: cover;
+            .content {
+                margin: auto;
+                width: 100vw;
+                height: 50vh;
+                background-color: rgba(255, 255, 255, 0.85);
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        div {
+            &.content {
+            margin: auto;
+
+            }
+
+            &.footer {
+                align-self: flex-end;
+                position: absolute;
+                bottom: 5vh;
+                width: 100vw;
+            }
+        }
 
         .circular-button {
-            width: 5em;
+            height: 5vh;
             transform: rotate(90deg);
             fill: #fff;
 
