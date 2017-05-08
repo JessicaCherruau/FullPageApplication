@@ -1,0 +1,48 @@
+#fullpage {
+    background-color: #373B44;
+    width: 100vw;
+    height: 100vh;
+
+    .section {
+        width: 100vw;
+        margin: 0;
+        max-width: none;
+        color: red;
+        overflow: hidden;
+        /*transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;*/
+        height: 100vh;
+    // transition: transform .2s ease-in-out;
+        
+        &.active {
+            
+        
+       /* transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;*/
+        }
+
+        .circular-button {
+            width: 5em;
+            transform: rotate(90deg);
+            fill: #fff;
+
+            &:hover {
+                fill: #666666
+            }
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    z-index:100;
+}
+
+a[ id= "servicios" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
